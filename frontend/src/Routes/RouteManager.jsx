@@ -5,7 +5,7 @@ import NotFound from '../components/NotFound/NotFound'
 import Home from '../components/Home/Home'
 import Login from '../components/Login/Login'
 import Dashboard from '../components/dashboard/dashboard'
-import SignUp from '../components/signUp/signUp'
+import SignUp from '../components/signUp/Regitster'
 
 function RouteManager() {
     return (

@@ -18,7 +18,7 @@ import { Link as RouteLink, useNavigate } from 'react-router-dom'
 
 import CustomInput from './CustomInput'
 
-function SignUp() {
+function Register() {
 
     const [username, setUsername] = useState('')
     const [lastname, setLastname] = useState('')
@@ -126,4 +126,4 @@ function SignUp() {
     )
 }
 
-export default SignUp
+export default Register;
