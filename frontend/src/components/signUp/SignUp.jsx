@@ -54,7 +54,9 @@ function SignUp() {
 
     const handleSignUp = async (e) => {
         try {
-            const res = await fetch('http://localhost:4000/user/register', {
+
+            const url = import.meta.env.VITE_SERVERURL;
+            const res = await fetch(`${url}/user/register`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'

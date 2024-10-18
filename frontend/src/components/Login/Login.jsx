@@ -34,7 +34,8 @@ function Login() {
 
     const handleLogin = async (e) => {
         try {
-            const res = await fetch('http://localhost:4000/user/login', {
+            const url = import.meta.env.VITE_SERVERURL
+            const res = await fetch(`${url}/user/login`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -46,6 +47,7 @@ function Login() {
             })
 
 
+            console.log(import.meta.env.VITE_SERVER)
             const data = await res.json()
 
 

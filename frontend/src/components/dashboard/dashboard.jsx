@@ -17,6 +17,7 @@ function Dashboard() {
     const navigate = useNavigate();
 
     const [email, setEmail] = useState('')
+    const [firstname, setFirstname] = useState('')
 
     function getDate() {
         const today = new Date();
@@ -59,6 +60,7 @@ function Dashboard() {
     useEffect(() => {
         getDate()
         setEmail(localStorage.getItem('email'))
+        setFirstname(localStorage.getItem('firstname'))
     }, [])
 
     return (
@@ -92,7 +94,7 @@ function Dashboard() {
                     <Flex alignItems="center" mb={6}>
                         <Avatar name="Sundar Gurung" src="https://bit.ly/broken-link" size="lg" />
                         <VStack align="left" ml={4}>
-                            <Text>Sundar Gurung</Text>
+                            <Text>{firstname}</Text>
                             <Text fontSize="sm">{email}</Text>
                         </VStack>
                     </Flex>
