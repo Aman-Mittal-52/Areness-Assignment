@@ -68,6 +68,8 @@ function SignUp() {
                 })
             })
 
+            localStorage.setItem('firstname',firstname)
+
 
             const data = await res.json()
 
