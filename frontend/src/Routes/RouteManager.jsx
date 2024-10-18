@@ -3,9 +3,9 @@ import { Route, Routes } from 'react-router-dom'
 
 import NotFound from '../components/NotFound/NotFound'
 import Home from '../components/Home/Home'
-import SignUp from '../components/signUp/signUp'
 import Login from '../components/Login/Login'
 import Dashboard from '../components/dashboard/dashboard'
+import SignUp from '../components/signUp/signUp'
 
 function RouteManager() {
     return (
