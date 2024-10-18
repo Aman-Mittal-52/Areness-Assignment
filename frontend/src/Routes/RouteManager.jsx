@@ -3,7 +3,7 @@ import { Route, Routes } from 'react-router-dom'
 
 import NotFound from '../components/NotFound/NotFound'
 import Home from '../components/Home/Home'
-import SignUp from '../components/signUp/signUp'
+import SignUp from '../components/signUp/SignUp';
 import Login from '../components/Login/Login'
 import Dashboard from '../components/dashboard/dashboard'
 
