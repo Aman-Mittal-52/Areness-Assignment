@@ -48,6 +48,9 @@ function Login() {
 
             const data = await res.json()
 
+
+            localStorage.setItem('email', email)
+
             console.log(data)
 
             if (data.token) {
